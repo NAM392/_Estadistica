@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct LIBRO {
+       int CODIGO ;          	/*  ID DEL LIBRO  */
+       char TITULO[30];
+       char AUTOR[20];
+       char TEMATICA[20];		/*  GENERO DEL LIBRO  */
+       char STATUS ;			/*  0 = DISPONIBLE   1 = PRESTADO  */
+       int LECTOR ;				/*  CODIGO DE ID DEL USUARIO  */
+};
+
+
+struct USUARIO {
+               int LECTOR ;		/*  CODIGO DE ID DEL USUARIO  */
+               char NOM[20];
+               int TE ;
+};
+
+
+struct MOVIMIENTO {
+                  int LECTOR ;		/*  CODIGO DE ID DEL USUARIO  */
+                  int CODIGO ;		/*  CODIGO DE ID DEL LIBRO  */
+                  char OPERACION ;  /*  0 = DEVOLUCION    1 = PRESTAMO  */
+};
+
+
+
+
+int main(){
+
+
+    printf("\n\n\n\n   FIN DEL PROGRAMA\n\n");
+    getchar() ;
+}
+
